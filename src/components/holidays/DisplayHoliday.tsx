@@ -108,7 +108,7 @@ const DisplayHoliday = () => {
                     <tr key={d.holidayID}>
                       <td>{index + 1}</td>
                       <td>{d.holidayName}</td>
-                      <td>{d.holidayDate}</td>
+                      <td>{new Date(d.holidayDate).toLocaleDateString()}</td>
                       <td>{d.holidayDay}</td>
                       <td>{d.mandatoryOptionalHoliday}</td>
                       {isAdmin && (
