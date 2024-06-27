@@ -5,7 +5,6 @@ import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import './login.css';
 import { useAuth } from './AuthContext';
 import AlertMessage from '../AlertMessage';
-import Footer from '../nav/Footer';
 
 const Login: React.FC = () => {
   const [email, setemail] = useState<string>('');
@@ -115,7 +114,6 @@ const Login: React.FC = () => {
           )}
         </div>
       </div>
-      <Footer /> {/* Include your Footer component here */}
       <style>
         {`
         body {

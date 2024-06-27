@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from "../login/AuthContext";
-import Footer from "../nav/Footer";
 
 interface RoleData {
   roleID: string;
@@ -148,9 +147,6 @@ const ReadRole = () => {
           </div>
         </div>
       )}
-
-      <Footer /> {/* Include your Footer component here */}
-
       <style>
         {`
           body {

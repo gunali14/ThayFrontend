@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../login/AuthContext";
-import Footer from "../nav/Footer";
 
 const DisplayEmployee = () => {
   const [data, setData] = useState<any[]>([]);
@@ -69,6 +68,7 @@ const DisplayEmployee = () => {
     getData();
   }, [baseUrl, token]);
 
+  
   return (
     <>
       <div style={{ background: 'linear-gradient(to right, lightblue, #ffffff)', padding: '20px' }}>
@@ -136,34 +136,11 @@ const DisplayEmployee = () => {
           </div>
         </div>
       )}
-      <Footer />
       <style>
         {`
           body {
             background: linear-gradient(to right, lightblue, #ffffff);
-          }
-          .btn {
-            margin-bottom: 10px;
-          }
-          .modal-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-          }
-          .modal-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            width: 300px;
-            text-align: center;
-          }
+          }         
         `}
       </style>
     </>

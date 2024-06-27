@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
 import moment from "moment";
-import Footer from "../nav/Footer";
 
 enum MandatoryOptional {
   Mandatory = "Mandatory",
@@ -207,7 +206,6 @@ const EditHoliday = () => {
         }
       `}
       </style>
-      <Footer />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useAuth } from "../login/AuthContext";
-import Footer from "../nav/Footer"; // Import your Footer component here
 
 const AttendanceRecord = () => {
   const [data, setData] = useState<any[]>([]);
@@ -151,7 +150,6 @@ const AttendanceRecord = () => {
           }
         `}
       </style>
-      <Footer /> {/* Add the Footer component */}
     </div>
   );
 };

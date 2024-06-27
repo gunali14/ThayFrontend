@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
 import AlertMessage from '../AlertMessage';
-import Footer from '../nav/Footer';
 
 const SignUp: React.FC = () => {
   const [employeeName, setEmployeeName] = useState<string>('');
@@ -130,7 +129,6 @@ const SignUp: React.FC = () => {
           )}
         </div>
       </div>
-      <Footer /> {/* Include your Footer component here */}
       <style>
         {`
           body {

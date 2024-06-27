@@ -4,7 +4,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import Select from "react-select";
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
-import Footer from "../nav/Footer";
 
 const EditRole: React.FC = () => {
   const { id } = useParams();
@@ -258,8 +257,6 @@ const EditRole: React.FC = () => {
         }
         `}
       </style>
-      <div style={{ paddingBottom: '100px' }} /> {/* Add space for the footer */}
-      <Footer /> {/* Add the Footer component */}
     </>
   );
 };

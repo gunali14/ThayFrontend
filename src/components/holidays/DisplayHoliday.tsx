@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../login/AuthContext";
-import Footer from "../nav/Footer";
 
 const DisplayHoliday = () => {
   const [data, setData] = useState<any[]>([]);
@@ -152,39 +151,9 @@ const DisplayHoliday = () => {
           </div>
         </div>
       )}
-      <div className="footer-space" style={{ height: '70px' }}></div> {/* Space for the footer */}
-      <Footer /> {/* Include your Footer component here */}
-
       <style>
         {`
-          html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
             background-image: linear-gradient(to right, lightblue, #ffffff);
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-          }
-
-          .modal-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          .modal-card {
-            background: white;
-            border-radius: 5px;
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
           }
         `}
       </style>

@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
-import Footer from "../nav/Footer"; // Import your Footer component here
 
 function AddRecord() {
   const [successMessage, setSuccessMessage] = useState<string>('');
@@ -86,7 +85,6 @@ function AddRecord() {
           onClose={() => setErrorMessage('')}
         />
       )}
-      <Footer /> {/* Add the Footer component */}
     </div>
   );
 }

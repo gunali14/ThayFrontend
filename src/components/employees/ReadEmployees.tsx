@@ -5,7 +5,6 @@ import { useAuth } from "../login/AuthContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import AlertMessage from "../AlertMessage";
-import Footer from "../nav/Footer";
 
 interface EmployeeProps {
   employeeID: string;
@@ -281,35 +280,10 @@ const ReadEmployees: React.FC = () => {
           </div>
         )}
       </div>
-      <Footer className="footer" /> {/* Pass className to the Footer component */}
       <style>
         {`
           body {
             background: linear-gradient(to right, lightblue, #ffffff);
-          }
-          .modal-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .modal-card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            width: 300px;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-          }
-          .footer {
-            transition: transform 0.5s ease-in-out;
-          }
-          .footer.hidden {
-            transform: translateY(100%);
           }
         `}
       </style>

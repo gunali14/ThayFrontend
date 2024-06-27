@@ -3,7 +3,6 @@ import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import { useAuth } from "../login/AuthContext";
 import "./paySlip.css";
-import Footer from "../nav/Footer";
 
 const PaySlip = () => {
   const [data, setData] = useState<any>(null);
@@ -173,15 +172,10 @@ const PaySlip = () => {
             Download PDF
           </button>
         </center>
-        <div style={{ height: "50px" }}></div> {/* Empty space for the footer */}
-        <Footer />
         <style>
           {`
             body {
               background: linear-gradient(to right, lightblue, #ffffff);
-            }
-            .btn {
-              margin-bottom: 50px;
             }
           `}
         </style>

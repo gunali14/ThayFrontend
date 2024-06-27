@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Select from 'react-select';
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
-import Footer from "../nav/Footer";
 
 interface RoleProps {
   roleID: string;
@@ -232,8 +231,6 @@ const AddRole: React.FC = () => {
           />
         )}
       </div>
-      <div style={{ paddingBottom: '100px' }} /> {/* Add space for the footer */}
-      <Footer /> {/* Add the Footer component */}
     </>
   );
 };

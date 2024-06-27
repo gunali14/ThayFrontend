@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
-import Footer from "../nav/Footer";
 
 interface EmployeeProps {
   employeeID: string;
@@ -252,7 +251,6 @@ const EditEmployee: React.FC = () => {
           onClose={() => setSuccessMessage('')}
         />
       )}
-      <Footer />
       <style>
         {`
         body {

@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../nav/Footer';
 
 const LeavePolicy: React.FC = () => {
   return (
@@ -124,8 +123,6 @@ const LeavePolicy: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="footer-space"></div>
-      <Footer />
     </div>
   );
 };

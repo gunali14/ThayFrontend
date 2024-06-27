@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../login/AuthContext";
 import AlertMessage from "../AlertMessage";
 import moment from "moment";
-import Footer from "../nav/Footer";
 
 enum MandatoryOptional {
   Mandatory = "Mandatory",
@@ -169,15 +168,8 @@ export default function HolidayForm() {
           onClose={() => setSuccessMessage("")}
         />
       )}
-
-      <Footer /> {/* Include your Footer component here */}
-
       <style>
         {`
-          html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
             background: linear-gradient(to right, lightblue, #ffffff);
           }
         `}

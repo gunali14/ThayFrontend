@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { CSSProperties, useEffect, useState } from 'react';
 import { useAuth } from './login/AuthContext';
-import Footer from './nav/Footer';
 
 function Home() {
   const [employee, setEmployee] = useState<any>({});
@@ -90,7 +89,6 @@ function Home() {
             </p>
           </div>
         </div>
-        <Footer />
       </div>
       <style>
         {`
