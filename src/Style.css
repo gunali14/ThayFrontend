@@ -1,0 +1,190 @@
+
+
+.whyschose {
+	background: #fff;
+    padding-top: 85px;
+}
+
+
+.title {
+	text-align:center;
+	padding-bottom: 60px;
+
+}
+
+.title h2 {
+	font-size: 50px;
+	line-height: 55px;
+	color:#ffc221;
+	font-weight: 500;
+	text-transform: uppercase;
+    margin-bottom: 27px;
+    position: relative;
+    padding-bottom: 8px;
+}
+.title h2:after {
+	position: relative;
+content: '';
+top: 100%;
+width: 110px;
+height: 10px;
+display: block;
+margin: 0 auto;
+background: #000;
+}
+
+.title span{
+color:#070500;
+font-size: 28px;
+line-height: 28px;
+margin-top: 20px;
+}
+.black {
+	font-weight: 500;
+	color:#070500;
+}
+
+.choose_bg {
+	
+}
+
+
+.choose_bg .white_bg  {
+	background: #fff;
+	padding: 40px 20px;
+	box-shadow: #ddd 0px 0px 10px 3px;
+	margin-bottom: 5px;
+}
+.choose_bg .white_bg .for_box {
+	text-align: center;
+	padding: 1px ;
+}
+.choose_bg .white_bg .for_box i {display:block;}
+.choose_bg .white_bg .for_box h3 {
+	font-size: 26px;
+    line-height: 21px;
+	color: #070500;
+	padding: 25px 0px 15px 0px ;
+	display: inline-block; 
+}
+
+.choose_bg .white_bg .for_box p {
+	color: #0d0c0a;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.read-more  {
+	width: 190px;
+margin: 0 auto;
+background: #fff;
+display: block;
+border: #f9be20 solid 2px;
+text-align: center;
+padding: 10px 0px;
+color: #0a0401 !important;
+font-size: 20px;
+margin-top: 40px;
+}
+.read-more:hover {
+	background: #f9be20;
+	color: #0a0401;
+}
+
+
+
+
+/** end map section **/
+
+
+/** end footer section **/
+/*---------------------------------------------------------------------
+    ener page css
+---------------------------------------------------------------------*/
+.brand_color .titlepage h2 {
+	font-weight: bold;
+	font-size: 40px !important;
+	text-transform: uppercase;
+}
+
+
+.brand_color {
+     background-color: #597bd6;
+}
+.brand_color .titlepage {
+     margin-top: 70px;
+padding-bottom: 70px;
+text-align: center;
+}
+
+.brand_color .abouttitle h2 {
+     color: #fff;
+     text-transform: uppercase;
+     font-size: 40px;
+     line-height: 45px;
+     padding: 40px 0;
+     font-weight: 500;
+     text-align: center;
+}
+
+.about {padding-top: 90px;}
+.about .about_box figure {margin: 0;}
+.about .about_box figure img {width: 100%;}
+.about .about_box h3 {color: #000; font-weight: bold; font-size: 30px; line-height: 35px;}
+.about .about_box p {color: #000; font-size: 17px; line-height: 23px; padding-top: 10px;}
+
+
+ /* Companies section */
+ .companies {
+    padding: 40px 0;
+    overflow: hidden; /* Hide overflow for smooth scrolling */
+  }
+  
+  .example {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide overflow for smooth scrolling */
+  }
+  
+  .logo-track {
+    display: flex;
+    gap: 20px; /* Adjust gap between logos */
+    animation: scrollLeft 60s linear infinite; /* Adjust animation duration for slower scroll */
+    width: calc(240px * 12); /* Adjust calculation based on number of logos */
+  }
+  
+  .companies__logo-box {
+    width: 120px; /* Adjust logo box width */
+    height: 80px;
+    border-radius: 20px;
+    overflow: hidden; /* Hide overflow for curved edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example shadow for logo boxes */
+  }
+  
+  .companies__logo-box img {
+    width: 100%; /* Ensure logos fill their containers */
+    height: 100%; /* Maintain aspect ratio */
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-240px * 6)); /* Adjust calculation based on number of logos */
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .col-md-12, .col-xl-6, .col-lg-6 {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .example {
+      flex-wrap: nowrap; /* Prevent logos from wrapping on smaller screens */
+    }
+  }
+  

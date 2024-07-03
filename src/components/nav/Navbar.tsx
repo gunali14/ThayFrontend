@@ -75,7 +75,8 @@ const CustomNavbar: FC = () => {
                         </>
                     )}
                     {!isLoggedIn && (
-                        <NavLink to="/login" className="nav-link p-3" onClick={handleNavClick}>Login</NavLink>
+                        <><NavLink to="/login" className="nav-link p-3" onClick={handleNavClick}>Login</NavLink>
+                        <NavLink to="/AboutUs" className="nav-linkp-3" onClick={handleNavClick}> About</NavLink></>
                     )}
                 </Nav>
             </Navbar.Collapse>
